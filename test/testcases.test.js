@@ -11,11 +11,13 @@ import HomePage from "../pages/HomePage";
 
 // })
 
-describe('Functional: Login test cases', () => {
+describe('Functional: test cases', () => {
     let loginpage
     let basepage
-   
+    let homepagefooter
+
   
+
     // let usernameerror="Epic sadface: Password is required"
     // let passworderror="Epic sadface: Username is required"
     // let xpathblankerror="h3[data-test='error']"
@@ -26,6 +28,7 @@ describe('Functional: Login test cases', () => {
   beforeAll(async () => {
         loginpage = new LoginPage()
         basepage=new BasePage()
+        homepagefooter = new HomePageFooter()
      
     })
 
@@ -77,31 +80,12 @@ describe('Functional: Login test cases', () => {
         expect(URL).toEqual('https://www.saucedemo.com/inventory.html')
        
     }, defaultTimeout)
-})
 
-    // afterEach(async () => {
-    //     if (test.hasFailed()) {
-    //         await page.screenshot({'screenshot.png':'true'});
-    //     }
-        
-    //   })
 
-    //Home Page
+ 
 
     /*-----------------------HomePage Footer-----------------------------------------*/
-describe('HomePage Footer Testsuite', () => {
 
-    let loginpage
-    let basepage
-    let homepagefooter
-
-    beforeAll(async () => {
-        loginpage = new LoginPage()
-        basepage = new BasePage()
-        homepagefooter = new HomePageFooter()
-        console.log('beforeAll method executed')
-
-    })
 
     test('Verify footer section is displayed', async function(){
         await loginpage.visit()
@@ -153,7 +137,7 @@ describe('HomePage Footer Testsuite', () => {
 
 /*-----------------------HomePage Header-----------------------------------------*/
 describe('HomePage Header Testsuite', () => {
-
+    
     let loginpage
     let basepage
     let homepageheader
