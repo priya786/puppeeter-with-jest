@@ -1,5 +1,5 @@
 import BasePage from "../pages/BasePage";
-import {n,Expectedcount,des1,des2,des3,des4,des5,des6, linkedinClick,facebookurl,twitterurl,name, password, defaultTimeout,invalidname,invalidpassword,blankErrMsg,usernameerror,passworderror,xpathblankerror,invalidErrMsg} from "../lib/config";
+import {ExpectedButton,n,Expectedcount,des1,des2,des3,des4,des5,des6, linkedinClick,facebookurl,twitterurl,name, password, defaultTimeout,invalidname,invalidpassword,blankErrMsg,usernameerror,passworderror,xpathblankerror,invalidErrMsg} from "../lib/config";
 import LoginPage from "../pages/LoginPage";
 import HomePageFooter from "../pages/HomePageFooter";
 import HomePageHeader from "../pages/HomePageHeader";
@@ -7,28 +7,19 @@ import HomePageHeader from "../pages/HomePageHeader";
 import HomePage from "../pages/HomePage";
 
 
-// describe('Functional: Login test cases', () => {
-
-// })
-
 describe('Functional: test cases', () => {
     let loginpage
     let basepage
     let homepagefooter
-
-  
-
-    // let usernameerror="Epic sadface: Password is required"
-    // let passworderror="Epic sadface: Username is required"
-    // let xpathblankerror="h3[data-test='error']"
-    // let invalidErrMsg="Epic sadface: Username and password do not match any user in this service"
-   
-    
+    let homepageheader
+    let homepage
 
   beforeAll(async () => {
         loginpage = new LoginPage()
         basepage=new BasePage()
         homepagefooter = new HomePageFooter()
+        homepageheader = new HomePageHeader()
+        homepage = new HomePage()
      
     })
 
@@ -45,9 +36,6 @@ describe('Functional: test cases', () => {
         
         await loginpage.visit()
         await loginpage.login(name, "")
-        // const ErrMsg = await page.$eval(xpathblankerror,el => el.textContent)
-       // const ErrMsg = await basepage.getText(page,xpathblankerror)
-
         const ErrMessage = await loginpage.ErrorMsg()
         console.log("Error message is : "+ErrMessage);
         expect(ErrMessage).toBe(usernameerror)
@@ -88,8 +76,7 @@ describe('Functional: test cases', () => {
 
 
     test('Verify footer section is displayed', async function(){
-        await loginpage.visit()
-        await loginpage.login(name, password)
+      
         await homepagefooter.footerDisplayed()
     }, defaultTimeout)
 
@@ -117,40 +104,29 @@ describe('Functional: test cases', () => {
         
     }, defaultTimeout)
 
-    // test('Verify navigated to facebook UI', async function(){
-    //     await loginpage.visit()
-    //     await loginpage.login(name, password)
-    //     await homepagefooter.facebookClick()
-    //     expect(facebookurl).toEqual('https://www.facebook.com/saucelabs')
+    test('Verify navigated to facebook UI', async function(){
+        await loginpage.visit()
+        await loginpage.login(name, password)
+        await homepagefooter.facebookClick()
+        const facebookurl= await page.url()
+        expect(facebookurl).toEqual('https://www.facebook.com/saucelabs')
         
-    // }, defaultTimeout)
+    }, defaultTimeout)
 
-    // test('Verify navigated to facebook UI', async function(){
-    //     await loginpage.visit()
-    //     await loginpage.login(name, password)
-    //     await homepagefooter.linkedinClick()
-    //     expect(linkedinClick).toEqual('https://www.linkedin.com/company/sauce-labs/')
-        
-    // }, defaultTimeout)
+    test('Verify navigated to linkedIn UI', async function(){
+        await loginpage.visit()
+        await loginpage.login(name, password)
+        await homepagefooter.linkedinClick()
+        const linkedinClick= await page.url()
+        // expect(linkedinClick).toBe.include('https://www.linkedin.com/')
+        // //toEqual('https://www.linkedin.com/company/sauce-labs/')
+        expect(page.title()).resolves.toMatch('LinkedIn');
+    }, defaultTimeout)
    
-})
+
 
 /*-----------------------HomePage Header-----------------------------------------*/
-describe('HomePage Header Testsuite', () => {
-    
-    let loginpage
-    let basepage
-    let homepageheader
-    let homepage
 
-    beforeAll(async () => {
-        loginpage = new LoginPage()
-        basepage = new BasePage()
-        homepageheader = new HomePageHeader()
-        homepage = new HomePage()
-        console.log('beforeAll method executed')
-
-    })
 
     test('Verify header section is displayed', async function(){
         await loginpage.visit()
@@ -167,9 +143,8 @@ describe('HomePage Header Testsuite', () => {
     }, defaultTimeout)
 
     test('Verify cross icon is closed', async function(){
-        await basepage.loadUrl(baseUrl)
-        await page.waitForTimeout(2000)
-        await loginpage.login(validLoginUsername, validLoginPassword)
+        await loginpage.visit()
+        await loginpage.login(name, password)
         await homepageheader.crossIcon()
     }, defaultTimeout)
 
@@ -234,21 +209,24 @@ describe('HomePage Header Testsuite', () => {
        let text=await homepage.productPrice()
     }, defaultTimeout)
 
-    test('should have expected class names', async () => {
+    test('Verify all the names are coming correctly or not', async () => {
         await loginpage.visit()
         await loginpage.login(name, password)
         const expectedNames = ['Sauce Labs Backpack', 'Sauce Labs Bike Light','Sauce Labs Bolt T-Shirt','Sauce Labs Fleece Jacket', 'Sauce Labs Onesie','Test.allTheThings() T-Shirt (Red)'];
-        text= await homepage.expectedtnames()
+       let actualNames= await homepage.expectedName()
+       console.log(actualNames+" "+expectedNames);
+       expect(actualNames).toEqual(expectedNames);
+
     })
 
-    test('Matching with names', async () => {
-        const expectedNames = ['Sauce Labs Backpack', 'Sauce Labs Bike Light','Sauce Labs Bolt T-Shirt','Sauce Labs Fleece Jacket', 'Sauce Labs Onesie','Test.allTheThings() T-Shirt (Red)'];
-        await loginpage.visit()
-        await loginpage.login(name, password)
-        let actualNames= await homepage.expectedName()
-        console.log(actualNames+" "+expectedNames);
-        expect(actualNames).toEqual(expectedNames);
-    })
+    // test('Matching with names', async () => {
+    //     const expectedNames = ['Sauce Labs Backpack', 'Sauce Labs Bike Light','Sauce Labs Bolt T-Shirt','Sauce Labs Fleece Jacket', 'Sauce Labs Onesie','Test.allTheThings() T-Shirt (Red)'];
+    //     await loginpage.visit()
+    //     await loginpage.login(name, password)
+    //     let actualNames= await homepage.expectedName()
+    //     console.log(actualNames+" "+expectedNames);
+    //     expect(actualNames).toEqual(expectedNames);
+    // })
 
 
 
@@ -261,7 +239,7 @@ describe('HomePage Header Testsuite', () => {
     //     console.log(actualNames+" "+expectedNames);
     //     expect(actualNames).toEqual(expectedNames);
     // })
-    test('Match with the description', async () => {
+    test('Verify that description content is matched or not', async () => {
         const expectedNames = [des1,des2,des3,des4,des5,des6];
         await loginpage.visit()
         await loginpage.login(name, password)
@@ -269,8 +247,15 @@ describe('HomePage Header Testsuite', () => {
         console.log(actualNames+" "+expectedNames);
         expect(actualNames).toEqual(expectedNames);
     })
+    test('Verify that after click on cart "Add to cart" button changed to "Remove"', async() => {
+        await loginpage.visit()
+        await loginpage.login(name, password)
+        let actualButton= await homepage.clickButton()
 
-    test('button should be Clicked or not for single click', async() => {
+        expect(actualCount).toEqual(ExpectedButton)
+    },defaultTimeout)
+
+    test('Verify that after click on cart count is increased or not', async() => {
         await loginpage.visit()
         await loginpage.login(name, password)
         await homepage.clickButton()
@@ -288,40 +273,21 @@ describe('HomePage Header Testsuite', () => {
     //     let actualCount=await homepage.cartCount()
     //     expect(actualCount).toEqual(Expectedcount)
     // },defaultTimeout)
+   
+   
     test('filter otion selection', async() => {
         await loginpage.visit()
         await loginpage.login(name, password)
-        Actaul=await homepage.priceFilter()
+        let Actual=await homepage.priceFilter()
 
       
     },defaultTimeout)
-
-    test.only('filter otion selection', async() => {
-        await loginpage.visit()
-        await loginpage.login(name, password)
-       func();
-
-      
-    },defaultTimeout)
-
-
-    //    let  sortedList= homepage.sortLowtohigh()
-    //     let isSorted = true;
-    //     for (let i = 0; i < sortedList.length - 1; i++) {
-    //       if (sortedList[i] > sortedList[i + 1]) {
-    //         isSorted = false;
-    //         break;
-    //       }
-    //     }
-      
-        // if (isSorted) {
-        //   console.log('The sorting is working fine.');
-        // } else {
-        //   console.log('The sorting is not working as expected.');
-        // }
-        // let actualCount=await homepage.cartCount()
-        // expect(actualCount).toEqual(Expectedcount)
-   
-
-
 })
+
+
+
+      
+    
+
+
+

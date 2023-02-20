@@ -9,7 +9,7 @@ const productprice='.inventory_item_price'
 const button='.btn_inventory'
 //const productDescriptioon='.inventory_item_desc'
 
-const buttonFirst="#add-to-cart-sauce-labs-bolt-t-shirt"
+const buttonFirst="#add-to-cart-sauce-labs-backpack"
 const cartcount=".shopping_cart_badge"
 
 const priceFiltericon='.product_sort_container'
@@ -61,22 +61,26 @@ export default class HomePage extends BasePage{
 
 
                     async expectedName(){
-                            actualNames=await matchElement(page,productName)
+                           let actualNames=await basepage.matchElement(page,productName)
                             return actualNames   
                          }
                     async expectedDescription(){
-                        actualDes=await matchElement(page,productDescription)
+                        let actualDes=await basepage.matchElement(page,productDescription)
                         return actualDes   
                     }
 
                     async clickButton(){
                         await page.waitForSelector(buttonFirst)
                         await page.click(buttonFirst)
+                        console.log("selector",buttonFirst)
+                        let text =await basepage.getText(page,buttonFirst)
+                        return text
                     }
 
                     async cartCount(){
                         await page.waitForSelector(cartcount)
-                       let text =await basepage.getCount(cartcount)
+                        console.log("selector",cartcount)
+                       let text =await basepage.getCount(page,cartcount)
                        return text
                     }
 
@@ -85,7 +89,7 @@ export default class HomePage extends BasePage{
                         await page.click(priceFiltericon)
                         await page.select(priceFiltericon,option)
                         await page.waitForTimeout(5000)
-                      sortedPrices =  await basepage.matchElement(page, productprice)
+                      let sortedPrices =  await basepage.matchElement(page, productprice)
                       return sortedPrices
                     }
 

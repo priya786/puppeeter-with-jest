@@ -15,11 +15,11 @@ export default class BasePage{
 
     async matchElement(page, selector){
         try {
-            await page.waitForSelector(productName)
-            const actualNames = await page.evaluate(({productName}) => {      
-            const elements = document.querySelectorAll(productName);
+            await page.waitForSelector(selector)
+            const actualNames = await page.evaluate(({selector}) => {      
+            const elements = document.querySelectorAll(selector);
             return Array.from(elements).map(element => element.textContent);
-            },{productName});
+            },{selector});
             return actualNames 
             
         } catch (error) {
@@ -56,9 +56,10 @@ export default class BasePage{
 
     async getText(page, selector) {      
         try {
+            
           //  const [getElement] = await page.$x(selector);
           //  let text = await page.evaluate(el => el.textContent, getElement);
-            let text = await page.$eval(selector,el => el.textContent)
+            const text = await page.$eval(selector,el => el.textContent)
             return text;
             
         } catch (error) {
@@ -81,14 +82,14 @@ export default class BasePage{
     //     }
     // }
 
-    async getCount(locator) {
+    async getCount(page,selector) {
         try {
-            const getCount = await page.$$(locator);
+            const getCount = await page.$$(selector);
             console.log(getCount)
            let count = await page.evaluate(el => el.length, getCount);
             return count;
         } catch (error) {
-            throw new Error('Cannot get count of selector',locator)
+            throw new Error('Cannot get count of selector',selector)
         }
     }
 

@@ -6,7 +6,7 @@ const header = ".primary_header"
 const cart = ".shopping_cart_link"
 const menuList = "a[class='bm-item menu-item']" //nav[@class='bm-item-list']" ////a[@class='bm-item menu-item']
 const allItems = "a[id='inventory_sidebar_link']"
-const about = "//a[@id='about_sidebar_link']"
+const about = "#about_sidebar_link"
 const aboutSelector = "a[id='about_sidebar_link']"
 const logout = "a[id='logout_sidebar_link']"
 const resetAppState = "a[id='reset_sidebar_link']"
@@ -26,8 +26,8 @@ export default class HomePageHeader extends BasePage {
         await page.waitForSelector(menuIcon)
         await page.click(menuIcon)
         await page.waitForTimeout(3000)
-        await page.waitForXPath(about)
-        const menuName = await basepage.getText(about)
+        await page.waitForSelector(about)
+        const menuName = await basepage.getText(page,about)
         return menuName
     }
 
@@ -42,9 +42,9 @@ export default class HomePageHeader extends BasePage {
     async clickAbout() {
         await page.waitForSelector(menuIcon)
         await page.click(menuIcon)
-        await page.waitForSelector(aboutSelector)
+        await page.waitForSelector(about)
         await page.waitForTimeout(1000)
-        await page.click(aboutSelector)
+        await page.click(about)
         console.log('Exiting about function')
     }
 
