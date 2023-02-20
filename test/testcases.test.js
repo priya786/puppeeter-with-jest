@@ -269,7 +269,7 @@ describe('Functional: test cases', () => {
     //     for(let i=1;i<=n;i++){
     //         await homepage.clickButton()
     //     }
-    //     await homepage.clickButton()
+    //     await homepage.clickButton()gi
     //     let actualCount=await homepage.cartCount()
     //     expect(actualCount).toEqual(Expectedcount)
     // },defaultTimeout)
