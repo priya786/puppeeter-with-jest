@@ -107,7 +107,8 @@ bail:5,
 
   // Use this configuration option to add custom reporters to Jest
   // reporters: undefined,
-
+  // reporters: ["default", "jest-puppeteer-allure"],
+  reporters: ['default', 'jest-puppeteer-allure'],
   // Automatically reset mock state before every test
   // resetMocks: false,
 
@@ -130,13 +131,13 @@ bail:5,
 
   // Allows you to use a custom runner instead of Jest's default test runner
   // runner: "jest-runner",
-
+  testRunner: 'jest-jasmine2',
   // The paths to modules that run some code to configure or set up the testing environment before each test
   // setupFiles: [],
-
+ 
   // A list of paths to modules that run some code to configure or set up the testing framework before each test
   // setupFilesAfterEnv: [],
-
+  setupFilesAfterEnv: ['jest-puppeteer-allure/src/registerAllureReporter','jest-image-snapshot'],
   // The number of seconds after which a test is considered as slow and reported as such in the results.
   // slowTestThreshold: 5,
 

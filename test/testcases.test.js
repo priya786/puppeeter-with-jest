@@ -3,8 +3,11 @@ import {ExpectedButton,n,Expectedcount,des1,des2,des3,des4,des5,des6, linkedinCl
 import LoginPage from "../pages/LoginPage";
 import HomePageFooter from "../pages/HomePageFooter";
 import HomePageHeader from "../pages/HomePageHeader";
-
+import registerAllureReporter from 'jest-puppeteer-allure/src/registerAllureReporter';
 import HomePage from "../pages/HomePage";
+const { toMatchImageSnapshot } = require('jest-image-snapshot');
+expect.extend({ toMatchImageSnapshot });
+
 
 
 describe('Functional: test cases', () => {
@@ -13,14 +16,35 @@ describe('Functional: test cases', () => {
     let homepagefooter
     let homepageheader
     let homepage
-
+ 
   beforeAll(async () => {
         loginpage = new LoginPage()
         basepage=new BasePage()
         homepagefooter = new HomePageFooter()
         homepageheader = new HomePageHeader()
-        homepage = new HomePage()
-     
+        homepage = new HomePage()     
+        const testResults = expect.getState().testResults;
+        const firstTestResult = testResults?.[0];
+        // const status = firstTestResult?.status;
+
+    })
+    beforeEach(async () => {
+        
+        await reporter.startStep('Navigated to Login page or not');
+        await reporter.epic('Component Tests.')
+        await reporter.feature('Shopping Cart Feature.')
+        await reporter.story('Cart Crud Story.')
+    })
+
+    afterEach(async () => {
+        const testInfo = expect.getState().currentTestName;
+  const screenshotPath = `screenshots/${testInfo}.png`;
+
+  const testResults = expect.getState().testResults;
+  if (testResults && testResults.length > 0 && testResults[testResults.length - 1].status === 'failed') {
+    await page.screenshot({ path: screenshotPath });
+  }
+        await reporter.endStep();
     })
 
     test('Verify login Functionality with Blank Credentials', async () => {
@@ -29,7 +53,7 @@ describe('Functional: test cases', () => {
        await loginpage.login("","")
        const ErrMessage = await loginpage.ErrorMsg()
        console.log("Error message is : "+ErrMessage);
-       expect(ErrMessage).toBe(blankErrMsg)
+       expect(ErrMessage).toMatchImageSnapshot(blankErrMsg);
     }, defaultTimeout)
 
     test('Verify login Functionality with username & blank password', async () => {
@@ -219,26 +243,7 @@ describe('Functional: test cases', () => {
 
     })
 
-    // test('Matching with names', async () => {
-    //     const expectedNames = ['Sauce Labs Backpack', 'Sauce Labs Bike Light','Sauce Labs Bolt T-Shirt','Sauce Labs Fleece Jacket', 'Sauce Labs Onesie','Test.allTheThings() T-Shirt (Red)'];
-    //     await loginpage.visit()
-    //     await loginpage.login(name, password)
-    //     let actualNames= await homepage.expectedName()
-    //     console.log(actualNames+" "+expectedNames);
-    //     expect(actualNames).toEqual(expectedNames);
-    // })
-
-
-
-    // test.only('should have expected class names', async () => {
-    //     const expectedNames = ['Sauce Labs Backpack', 'Sauce Labs Bike Light','Sauce Labs Bolt T-Shirt','Sauce Labs Fleece Jacket', 'Sauce Labs Onesie','Test.allTheThings() T-Shirt (Red)'];
-    //     await loginpage.visit()
-    //     await loginpage.login(name, password)
-    //     const productName=".inventory_item_name"
-    //     let actualNames= await basepage.matchElement(page,productName)
-    //     console.log(actualNames+" "+expectedNames);
-    //     expect(actualNames).toEqual(expectedNames);
-    // })
+    
     test('Verify that description content is matched or not', async () => {
         const expectedNames = [des1,des2,des3,des4,des5,des6];
         await loginpage.visit()
@@ -263,25 +268,26 @@ describe('Functional: test cases', () => {
         expect(actualCount).toEqual(Expectedcount)
     },defaultTimeout)
 
-    // test.only('button should be Clicked or not for multiple click', async() => {
-    //     await loginpage.visit()
-    //     await loginpage.login(name, password)
-    //     for(let i=1;i<=n;i++){
-    //         await homepage.clickButton()
-    //     }
-    //     await homepage.clickButton()gi
-    //     let actualCount=await homepage.cartCount()
-    //     expect(actualCount).toEqual(Expectedcount)
-    // },defaultTimeout)
-   
-   
     test('filter otion selection', async() => {
+        await reporter.startStep('Navigated to Login page or not');
+        await reporter.epic('Component Tests.')
+        await reporter.feature('Shopping Cart Feature.')
+        await reporter.story('Cart Crud Story.')
         await loginpage.visit()
         await loginpage.login(name, password)
         let Actual=await homepage.priceFilter()
-
+        let expected = await homepage.getSortedArrayOfPrices()
+        expect(Actual).toEqual(expect.arrayContaining(expected));
+   
       
     },defaultTimeout)
+
+    // it.only('should match a screenshot', async () => {
+    //     await page.goto('https://www.example.com');
+    //     const screenshot = await page.screenshot();
+    //     expect(screenshot).toMatchImageSnapshot();
+    //   }, 30000);
+  
 })
 
 

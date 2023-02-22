@@ -1,0 +1,43 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1677045552080' stop='1677045552165'>
+    <name>Functional: test cases</name>
+    <title>Functional: test cases</title>
+    <test-cases>
+        <test-case start='1677045552081' status='failed' stop='1677045552165'>
+            <name>Functional: test cases encountered a declaration exception</name>
+            <title>Functional: test cases encountered a declaration exception</title>
+            <labels>
+                <label name='epic' value='Component Tests.'/>
+                <label name='feature' value='Shopping Cart Feature.'/>
+                <label name='story' value='Cart Crud Story.'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1677045552081' status='passed' stop='1677045552082'>
+                    <name>Navigated to Login page or not</name>
+                    <title>Navigated to Login page or not</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='screenshot' source='c56073de-e230-4a52-af82-8b4ea94eb4e5-attachment.png' type='image/png' size='8715'/>
+            </attachments>
+            <failure>
+                <message>ReferenceError: tes is not defined</message>
+                <stack-trace>ReferenceError: tes is not defined
+                    at Suite.tes (D:\JEST-PPTR\test\testcases.test.js:50:5)
+                    at addSpecsToSuite (D:\JEST-PPTR\node_modules\jest-jasmine2\build\jasmine\Env.js:356:49)
+                    at Env.describe (D:\JEST-PPTR\node_modules\jest-jasmine2\build\jasmine\Env.js:331:9)
+                    at describe (D:\JEST-PPTR\node_modules\jest-jasmine2\build\jasmine\jasmineLight.js:58:18)
+                    at Object.describe (D:\JEST-PPTR\test\testcases.test.js:13:1)
+                    at Runtime._execModule (D:\JEST-PPTR\node_modules\jest-runtime\build\index.js:1429:24)
+                    at Runtime._loadModule (D:\JEST-PPTR\node_modules\jest-runtime\build\index.js:1012:12)
+                    at Runtime.requireModule (D:\JEST-PPTR\node_modules\jest-runtime\build\index.js:872:12)
+                    at jasmine2 (D:\JEST-PPTR\node_modules\jest-jasmine2\build\index.js:195:13)
+                    at runTestInternal (D:\JEST-PPTR\node_modules\jest-runner\build\runTest.js:367:16)
+                    at runTest (D:\JEST-PPTR\node_modules\jest-runner\build\runTest.js:444:34)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

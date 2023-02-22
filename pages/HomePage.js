@@ -89,8 +89,8 @@ export default class HomePage extends BasePage{
                         await page.click(priceFiltericon)
                         await page.select(priceFiltericon,option)
                         await page.waitForTimeout(5000)
-                      let sortedPrices =  await basepage.matchElement(page, productprice)
-                      return sortedPrices
+                      let actualsortedPrices =  await basepage.matchElement(page, productprice)
+                      return actualsortedPrices
                     }
 
                     // async sortLowtohigh(){
@@ -111,14 +111,28 @@ export default class HomePage extends BasePage{
                     //     }
                     // }
 
-                    async func() {
-     
-                        // Original string
-                        var arr = ["Geeks", "for", "Geeks"]
-                     
-                        console.log(arr);
-                        // Sorting the array
-                        console.log(arr.sort());
+                async getSortedArrayOfPrices(){
+                const services = await page.evaluate(({productprice}) =>
+                Array.from(
+                document.querySelectorAll(productprice),
+                (element) => element.textContent
+                ), {productprice}
+                )
+                        console.log(services)
+                        //let final = services.map(e=> Number(e.replace("$", ""))).sort((a,b)=>{return a-b}).map(e=> "$"+e)
+                        const removedDollerArray=[]
+                        for(let i=0; i < services.length; i++){
+                            removedDollerArray.push(Number(services[i].replace("$", "")))
+                        }
+                
+                        removedDollerArray.sort((a,b)=>{return a-b})
+                
+                        const sortedArry =[]
+                        for(let i=0; i<removedDollerArray.length; i++){
+                            sortedArry.push("$"+removedDollerArray[i])
+                        }
+                
+                        console.log(sortedArry)
+                        return sortedArry
                     }
-
 }

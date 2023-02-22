@@ -1,0 +1,583 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1677045611759' stop='1677045673746'>
+    <name>Functional: test cases</name>
+    <title>Functional: test cases</title>
+    <test-cases>
+        <test-case start='1677045611759' status='passed' stop='1677045614062'>
+            <name>Functional: test cases Verify login Functionality with Blank Credentials</name>
+            <title>Functional: test cases Verify login Functionality with Blank Credentials</title>
+            <labels>
+                <label name='epic' value='Component Tests.'/>
+                <label name='feature' value='Shopping Cart Feature.'/>
+                <label name='story' value='Cart Crud Story.'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1677045611760' status='passed' stop='1677045614062'>
+                    <name>Navigated to Login page or not</name>
+                    <title>Navigated to Login page or not</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1677045614062' status='passed' stop='1677045615318'>
+            <name>Functional: test cases Verify login Functionality with username &amp; blank password</name>
+            <title>Functional: test cases Verify login Functionality with username &amp; blank password</title>
+            <labels>
+                <label name='epic' value='Component Tests.'/>
+                <label name='feature' value='Shopping Cart Feature.'/>
+                <label name='story' value='Cart Crud Story.'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1677045614063' status='passed' stop='1677045615318'>
+                    <name>Navigated to Login page or not</name>
+                    <title>Navigated to Login page or not</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1677045615318' status='passed' stop='1677045616327'>
+            <name>Functional: test cases Verify login Functionality with blank username &amp; valid password</name>
+            <title>Functional: test cases Verify login Functionality with blank username &amp; valid password</title>
+            <labels>
+                <label name='epic' value='Component Tests.'/>
+                <label name='feature' value='Shopping Cart Feature.'/>
+                <label name='story' value='Cart Crud Story.'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1677045615318' status='passed' stop='1677045616327'>
+                    <name>Navigated to Login page or not</name>
+                    <title>Navigated to Login page or not</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1677045616328' status='passed' stop='1677045617336'>
+            <name>Functional: test cases Verify login Functionality with invalid username &amp; invalid password</name>
+            <title>Functional: test cases Verify login Functionality with invalid username &amp; invalid password</title>
+            <labels>
+                <label name='epic' value='Component Tests.'/>
+                <label name='feature' value='Shopping Cart Feature.'/>
+                <label name='story' value='Cart Crud Story.'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1677045616328' status='passed' stop='1677045617336'>
+                    <name>Navigated to Login page or not</name>
+                    <title>Navigated to Login page or not</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1677045617337' status='passed' stop='1677045618400'>
+            <name>Functional: test cases Verify login Functionality with username &amp; password</name>
+            <title>Functional: test cases Verify login Functionality with username &amp; password</title>
+            <labels>
+                <label name='epic' value='Component Tests.'/>
+                <label name='feature' value='Shopping Cart Feature.'/>
+                <label name='story' value='Cart Crud Story.'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1677045617337' status='passed' stop='1677045618399'>
+                    <name>Navigated to Login page or not</name>
+                    <title>Navigated to Login page or not</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1677045618400' status='passed' stop='1677045618426'>
+            <name>Functional: test cases Verify footer section is displayed</name>
+            <title>Functional: test cases Verify footer section is displayed</title>
+            <labels>
+                <label name='epic' value='Component Tests.'/>
+                <label name='feature' value='Shopping Cart Feature.'/>
+                <label name='story' value='Cart Crud Story.'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1677045618400' status='passed' stop='1677045618425'>
+                    <name>Navigated to Login page or not</name>
+                    <title>Navigated to Login page or not</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1677045618426' status='passed' stop='1677045619225'>
+            <name>Functional: test cases Verify social icons displayed</name>
+            <title>Functional: test cases Verify social icons displayed</title>
+            <labels>
+                <label name='epic' value='Component Tests.'/>
+                <label name='feature' value='Shopping Cart Feature.'/>
+                <label name='story' value='Cart Crud Story.'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1677045618426' status='passed' stop='1677045619225'>
+                    <name>Navigated to Login page or not</name>
+                    <title>Navigated to Login page or not</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1677045619225' status='passed' stop='1677045620440'>
+            <name>Functional: test cases Verify is footer message displayed</name>
+            <title>Functional: test cases Verify is footer message displayed</title>
+            <labels>
+                <label name='epic' value='Component Tests.'/>
+                <label name='feature' value='Shopping Cart Feature.'/>
+                <label name='story' value='Cart Crud Story.'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1677045619225' status='passed' stop='1677045620440'>
+                    <name>Navigated to Login page or not</name>
+                    <title>Navigated to Login page or not</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1677045620441' status='passed' stop='1677045624459'>
+            <name>Functional: test cases Verify navigated to twitter URL</name>
+            <title>Functional: test cases Verify navigated to twitter URL</title>
+            <labels>
+                <label name='epic' value='Component Tests.'/>
+                <label name='feature' value='Shopping Cart Feature.'/>
+                <label name='story' value='Cart Crud Story.'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1677045620441' status='passed' stop='1677045624459'>
+                    <name>Navigated to Login page or not</name>
+                    <title>Navigated to Login page or not</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1677045624459' status='passed' stop='1677045629754'>
+            <name>Functional: test cases Verify navigated to facebook UI</name>
+            <title>Functional: test cases Verify navigated to facebook UI</title>
+            <labels>
+                <label name='epic' value='Component Tests.'/>
+                <label name='feature' value='Shopping Cart Feature.'/>
+                <label name='story' value='Cart Crud Story.'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1677045624459' status='passed' stop='1677045629754'>
+                    <name>Navigated to Login page or not</name>
+                    <title>Navigated to Login page or not</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1677045629755' status='passed' stop='1677045632890'>
+            <name>Functional: test cases Verify navigated to linkedIn UI</name>
+            <title>Functional: test cases Verify navigated to linkedIn UI</title>
+            <labels>
+                <label name='epic' value='Component Tests.'/>
+                <label name='feature' value='Shopping Cart Feature.'/>
+                <label name='story' value='Cart Crud Story.'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1677045629755' status='passed' stop='1677045632889'>
+                    <name>Navigated to Login page or not</name>
+                    <title>Navigated to Login page or not</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1677045632890' status='passed' stop='1677045633811'>
+            <name>Functional: test cases Verify header section is displayed</name>
+            <title>Functional: test cases Verify header section is displayed</title>
+            <labels>
+                <label name='epic' value='Component Tests.'/>
+                <label name='feature' value='Shopping Cart Feature.'/>
+                <label name='story' value='Cart Crud Story.'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1677045632890' status='passed' stop='1677045633811'>
+                    <name>Navigated to Login page or not</name>
+                    <title>Navigated to Login page or not</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1677045633811' status='passed' stop='1677045637588'>
+            <name>Functional: test cases Verify is menu items displayed</name>
+            <title>Functional: test cases Verify is menu items displayed</title>
+            <labels>
+                <label name='epic' value='Component Tests.'/>
+                <label name='feature' value='Shopping Cart Feature.'/>
+                <label name='story' value='Cart Crud Story.'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1677045633812' status='passed' stop='1677045637588'>
+                    <name>Navigated to Login page or not</name>
+                    <title>Navigated to Login page or not</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1677045637588' status='passed' stop='1677045641413'>
+            <name>Functional: test cases Verify cross icon is closed</name>
+            <title>Functional: test cases Verify cross icon is closed</title>
+            <labels>
+                <label name='epic' value='Component Tests.'/>
+                <label name='feature' value='Shopping Cart Feature.'/>
+                <label name='story' value='Cart Crud Story.'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1677045637588' status='passed' stop='1677045641413'>
+                    <name>Navigated to Login page or not</name>
+                    <title>Navigated to Login page or not</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1677045641414' status='passed' stop='1677045643521'>
+            <name>Functional: test cases Verify navigate to About page</name>
+            <title>Functional: test cases Verify navigate to About page</title>
+            <labels>
+                <label name='epic' value='Component Tests.'/>
+                <label name='feature' value='Shopping Cart Feature.'/>
+                <label name='story' value='Cart Crud Story.'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1677045641414' status='passed' stop='1677045643521'>
+                    <name>Navigated to Login page or not</name>
+                    <title>Navigated to Login page or not</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1677045643521' status='passed' stop='1677045646028'>
+            <name>Functional: test cases Verify navigate to Login page</name>
+            <title>Functional: test cases Verify navigate to Login page</title>
+            <labels>
+                <label name='epic' value='Component Tests.'/>
+                <label name='feature' value='Shopping Cart Feature.'/>
+                <label name='story' value='Cart Crud Story.'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1677045643521' status='passed' stop='1677045646028'>
+                    <name>Navigated to Login page or not</name>
+                    <title>Navigated to Login page or not</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1677045646028' status='passed' stop='1677045648936'>
+            <name>Functional: test cases Verify menu items name</name>
+            <title>Functional: test cases Verify menu items name</title>
+            <labels>
+                <label name='epic' value='Component Tests.'/>
+                <label name='feature' value='Shopping Cart Feature.'/>
+                <label name='story' value='Cart Crud Story.'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1677045646028' status='passed' stop='1677045648936'>
+                    <name>Navigated to Login page or not</name>
+                    <title>Navigated to Login page or not</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1677045648936' status='passed' stop='1677045649845'>
+            <name>Functional: test cases Verify the item count</name>
+            <title>Functional: test cases Verify the item count</title>
+            <labels>
+                <label name='epic' value='Component Tests.'/>
+                <label name='feature' value='Shopping Cart Feature.'/>
+                <label name='story' value='Cart Crud Story.'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1677045648936' status='passed' stop='1677045649845'>
+                    <name>Navigated to Login page or not</name>
+                    <title>Navigated to Login page or not</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1677045649845' status='passed' stop='1677045650637'>
+            <name>Functional: test cases Verify all the name of products</name>
+            <title>Functional: test cases Verify all the name of products</title>
+            <labels>
+                <label name='epic' value='Component Tests.'/>
+                <label name='feature' value='Shopping Cart Feature.'/>
+                <label name='story' value='Cart Crud Story.'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1677045649845' status='passed' stop='1677045650637'>
+                    <name>Navigated to Login page or not</name>
+                    <title>Navigated to Login page or not</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1677045650637' status='passed' stop='1677045651402'>
+            <name>Functional: test cases Verify all the describtion of products</name>
+            <title>Functional: test cases Verify all the describtion of products</title>
+            <labels>
+                <label name='epic' value='Component Tests.'/>
+                <label name='feature' value='Shopping Cart Feature.'/>
+                <label name='story' value='Cart Crud Story.'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1677045650637' status='passed' stop='1677045651402'>
+                    <name>Navigated to Login page or not</name>
+                    <title>Navigated to Login page or not</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1677045651402' status='passed' stop='1677045652631'>
+            <name>Functional: test cases Verify all the price of products</name>
+            <title>Functional: test cases Verify all the price of products</title>
+            <labels>
+                <label name='epic' value='Component Tests.'/>
+                <label name='feature' value='Shopping Cart Feature.'/>
+                <label name='story' value='Cart Crud Story.'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1677045651402' status='passed' stop='1677045652631'>
+                    <name>Navigated to Login page or not</name>
+                    <title>Navigated to Login page or not</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1677045652631' status='passed' stop='1677045653380'>
+            <name>Functional: test cases Verify all the button of products</name>
+            <title>Functional: test cases Verify all the button of products</title>
+            <labels>
+                <label name='epic' value='Component Tests.'/>
+                <label name='feature' value='Shopping Cart Feature.'/>
+                <label name='story' value='Cart Crud Story.'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1677045652631' status='passed' stop='1677045653380'>
+                    <name>Navigated to Login page or not</name>
+                    <title>Navigated to Login page or not</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1677045653380' status='passed' stop='1677045654199'>
+            <name>Functional: test cases Verify menu items name</name>
+            <title>Functional: test cases Verify menu items name</title>
+            <labels>
+                <label name='epic' value='Component Tests.'/>
+                <label name='feature' value='Shopping Cart Feature.'/>
+                <label name='story' value='Cart Crud Story.'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1677045653381' status='passed' stop='1677045654199'>
+                    <name>Navigated to Login page or not</name>
+                    <title>Navigated to Login page or not</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1677045654199' status='passed' stop='1677045655058'>
+            <name>Functional: test cases Verify all the names are coming correctly or not</name>
+            <title>Functional: test cases Verify all the names are coming correctly or not</title>
+            <labels>
+                <label name='epic' value='Component Tests.'/>
+                <label name='feature' value='Shopping Cart Feature.'/>
+                <label name='story' value='Cart Crud Story.'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1677045654199' status='passed' stop='1677045655058'>
+                    <name>Navigated to Login page or not</name>
+                    <title>Navigated to Login page or not</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1677045655058' status='passed' stop='1677045655852'>
+            <name>Functional: test cases Verify that description content is matched or not</name>
+            <title>Functional: test cases Verify that description content is matched or not</title>
+            <labels>
+                <label name='epic' value='Component Tests.'/>
+                <label name='feature' value='Shopping Cart Feature.'/>
+                <label name='story' value='Cart Crud Story.'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1677045655058' status='passed' stop='1677045655852'>
+                    <name>Navigated to Login page or not</name>
+                    <title>Navigated to Login page or not</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1677045655853' status='failed' stop='1677045657174'>
+            <name>Functional: test cases Verify that after click on cart "Add to cart" button changed to "Remove"</name>
+            <title>Functional: test cases Verify that after click on cart "Add to cart" button changed to "Remove"</title>
+            <labels>
+                <label name='epic' value='Component Tests.'/>
+                <label name='feature' value='Shopping Cart Feature.'/>
+                <label name='story' value='Cart Crud Story.'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1677045655853' status='passed' stop='1677045656918'>
+                    <name>Navigated to Login page or not</name>
+                    <title>Navigated to Login page or not</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='screenshot' source='d46b1b1e-7563-486e-bcc0-58f27c61ad0d-attachment.png' type='image/png' size='678726'/>
+            </attachments>
+            <failure>
+                <message>Error:  Selector Not found :#add-to-cart-sauce-labs-backpack</message>
+                <stack-trace>Error:  Selector Not found :#add-to-cart-sauce-labs-backpack
+                    at BasePage.getText (D:\JEST-PPTR\pages\BasePage.js:66:19)
+                    at runMicrotasks (&lt;anonymous>)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+                    at HomePage.clickButton (D:\JEST-PPTR\pages\HomePage.js:76:35)
+                    at Object.&lt;anonymous> (D:\JEST-PPTR\test\testcases.test.js:258:27)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1677045657174' status='failed' stop='1677045667379'>
+            <name>Functional: test cases Verify that after click on cart count is increased or not</name>
+            <title>Functional: test cases Verify that after click on cart count is increased or not</title>
+            <labels>
+                <label name='epic' value='Component Tests.'/>
+                <label name='feature' value='Shopping Cart Feature.'/>
+                <label name='story' value='Cart Crud Story.'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1677045657174' status='passed' stop='1677045667190'>
+                    <name>Navigated to Login page or not</name>
+                    <title>Navigated to Login page or not</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='screenshot' source='e6c54ffd-9b11-4f1d-a0a4-981821748ef9-attachment.png' type='image/png' size='678726'/>
+            </attachments>
+            <failure>
+                <message>: Timeout - Async callback was not invoked within the 10000 ms timeout specified by jest.setTimeout.</message>
+                <stack-trace>Timeout - Async callback was not invoked within the 10000 ms timeout specified by jest.setTimeout.Error: 
+                    at new Spec (D:\JEST-PPTR\node_modules\jest-jasmine2\build\jasmine\Spec.js:107:22)
+                    at new Spec (D:\JEST-PPTR\node_modules\jest-jasmine2\build\setup_jest_globals.js:69:9)
+                    at specFactory (D:\JEST-PPTR\node_modules\jest-jasmine2\build\jasmine\Env.js:398:22)
+                    at Env.it (D:\JEST-PPTR\node_modules\jest-jasmine2\build\jasmine\Env.js:449:22)
+                    at Env.it (D:\JEST-PPTR\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:137:23)
+                    at it (D:\JEST-PPTR\node_modules\jest-jasmine2\build\jasmine\jasmineLight.js:67:21)
+                    at Suite.test (D:\JEST-PPTR\test\testcases.test.js:263:5)
+                    at addSpecsToSuite (D:\JEST-PPTR\node_modules\jest-jasmine2\build\jasmine\Env.js:356:49)
+                    at Env.describe (D:\JEST-PPTR\node_modules\jest-jasmine2\build\jasmine\Env.js:331:9)
+                    at describe (D:\JEST-PPTR\node_modules\jest-jasmine2\build\jasmine\jasmineLight.js:58:18)
+                    at Object.describe (D:\JEST-PPTR\test\testcases.test.js:13:1)
+                    at Runtime._execModule (D:\JEST-PPTR\node_modules\jest-runtime\build\index.js:1429:24)
+                    at Runtime._loadModule (D:\JEST-PPTR\node_modules\jest-runtime\build\index.js:1012:12)
+                    at Runtime.requireModule (D:\JEST-PPTR\node_modules\jest-runtime\build\index.js:872:12)
+                    at jasmine2 (D:\JEST-PPTR\node_modules\jest-jasmine2\build\index.js:195:13)
+                    at runTestInternal (D:\JEST-PPTR\node_modules\jest-runner\build\runTest.js:367:16)
+                    at runTest (D:\JEST-PPTR\node_modules\jest-runner\build\runTest.js:444:34)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1677045667379' status='passed' stop='1677045673746'>
+            <name>Functional: test cases filter otion selection</name>
+            <title>Functional: test cases filter otion selection</title>
+            <labels>
+                <label name='epic' value='Component Tests.'/>
+                <label name='feature' value='Shopping Cart Feature.'/>
+                <label name='story' value='Cart Crud Story.'/>
+                <label name='epic' value='Component Tests.'/>
+                <label name='feature' value='Shopping Cart Feature.'/>
+                <label name='story' value='Cart Crud Story.'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1677045667379' status='undefined'>
+                    <name>Navigated to Login page or not</name>
+                    <title>Navigated to Login page or not</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1677045667380' status='passed' stop='1677045673746'>
+                            <name>Navigated to Login page or not</name>
+                            <title>Navigated to Login page or not</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
