@@ -38,22 +38,22 @@ describe('Functional: test cases', () => {
 
     afterEach(async () => {
         const testInfo = expect.getState().currentTestName;
-  const screenshotPath = `screenshots/${testInfo}.png`;
+        const screenshotPath = `screenshots/${testInfo}.png`;
 
-  const testResults = expect.getState().testResults;
-  if (testResults && testResults.length > 0 && testResults[testResults.length - 1].status === 'failed') {
-    await page.screenshot({ path: screenshotPath });
-  }
+        const testResults = expect.getState().testResults;
+        if (testResults && testResults.length > 0 && testResults[testResults.length - 1].status === 'failed') {
+        await page.screenshot({ path: screenshotPath });
+    }
         await reporter.endStep();
     })
 
-    test('Verify login Functionality with Blank Credentials', async () => {
+    test.only('Verify login Functionality with Blank Credentials', async () => {
         
        await loginpage.visit()
        await loginpage.login("","")
        const ErrMessage = await loginpage.ErrorMsg()
        console.log("Error message is : "+ErrMessage);
-       expect(ErrMessage).toMatchImageSnapshot(blankErrMsg);
+       expect(ErrMessage).toBe(blankErrMsg);
     }, defaultTimeout)
 
     test('Verify login Functionality with username & blank password', async () => {
