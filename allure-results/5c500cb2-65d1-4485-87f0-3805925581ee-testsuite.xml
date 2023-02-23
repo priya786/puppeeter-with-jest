@@ -1,0 +1,350 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1677155665177' stop='1677155666857'>
+    <name>Functional: test cases</name>
+    <title>Functional: test cases</title>
+    <test-cases>
+        <test-case start='1677155665177' status='passed' stop='1677155666853'>
+            <name>Functional: test cases Verify login Functionality with Blank Credentials</name>
+            <title>Functional: test cases Verify login Functionality with Blank Credentials</title>
+            <labels>
+                <label name='epic' value='Component Tests.'/>
+                <label name='feature' value='Shopping Cart Feature.'/>
+                <label name='story' value='Cart Crud Story.'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1677155665178' status='passed' stop='1677155666853'>
+                    <name>Navigated to Login page or not</name>
+                    <title>Navigated to Login page or not</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1677155666853' status='undefined' stop='1677155666853'>
+            <name>Functional: test cases Verify login Functionality with username &amp; blank password</name>
+            <title>Functional: test cases Verify login Functionality with username &amp; blank password</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test was disabled</message>
+                <stack-trace>undefined</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1677155666853' status='undefined' stop='1677155666853'>
+            <name>Functional: test cases Verify login Functionality with blank username &amp; valid password</name>
+            <title>Functional: test cases Verify login Functionality with blank username &amp; valid password</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test was disabled</message>
+                <stack-trace>undefined</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1677155666853' status='undefined' stop='1677155666854'>
+            <name>Functional: test cases Verify login Functionality with invalid username &amp; invalid password</name>
+            <title>Functional: test cases Verify login Functionality with invalid username &amp; invalid password</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test was disabled</message>
+                <stack-trace>undefined</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1677155666854' status='undefined' stop='1677155666854'>
+            <name>Functional: test cases Verify login Functionality with username &amp; password</name>
+            <title>Functional: test cases Verify login Functionality with username &amp; password</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test was disabled</message>
+                <stack-trace>undefined</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1677155666854' status='undefined' stop='1677155666854'>
+            <name>Functional: test cases Verify footer section is displayed</name>
+            <title>Functional: test cases Verify footer section is displayed</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test was disabled</message>
+                <stack-trace>undefined</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1677155666854' status='undefined' stop='1677155666854'>
+            <name>Functional: test cases Verify social icons displayed</name>
+            <title>Functional: test cases Verify social icons displayed</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test was disabled</message>
+                <stack-trace>undefined</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1677155666854' status='undefined' stop='1677155666854'>
+            <name>Functional: test cases Verify is footer message displayed</name>
+            <title>Functional: test cases Verify is footer message displayed</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test was disabled</message>
+                <stack-trace>undefined</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1677155666854' status='undefined' stop='1677155666854'>
+            <name>Functional: test cases Verify navigated to twitter URL</name>
+            <title>Functional: test cases Verify navigated to twitter URL</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test was disabled</message>
+                <stack-trace>undefined</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1677155666854' status='undefined' stop='1677155666855'>
+            <name>Functional: test cases Verify navigated to facebook UI</name>
+            <title>Functional: test cases Verify navigated to facebook UI</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test was disabled</message>
+                <stack-trace>undefined</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1677155666855' status='undefined' stop='1677155666855'>
+            <name>Functional: test cases Verify navigated to linkedIn UI</name>
+            <title>Functional: test cases Verify navigated to linkedIn UI</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test was disabled</message>
+                <stack-trace>undefined</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1677155666855' status='undefined' stop='1677155666855'>
+            <name>Functional: test cases Verify header section is displayed</name>
+            <title>Functional: test cases Verify header section is displayed</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test was disabled</message>
+                <stack-trace>undefined</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1677155666855' status='undefined' stop='1677155666855'>
+            <name>Functional: test cases Verify is menu items displayed</name>
+            <title>Functional: test cases Verify is menu items displayed</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test was disabled</message>
+                <stack-trace>undefined</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1677155666855' status='undefined' stop='1677155666856'>
+            <name>Functional: test cases Verify cross icon is closed</name>
+            <title>Functional: test cases Verify cross icon is closed</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test was disabled</message>
+                <stack-trace>undefined</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1677155666856' status='undefined' stop='1677155666856'>
+            <name>Functional: test cases Verify navigate to About page</name>
+            <title>Functional: test cases Verify navigate to About page</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test was disabled</message>
+                <stack-trace>undefined</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1677155666856' status='undefined' stop='1677155666856'>
+            <name>Functional: test cases Verify navigate to Login page</name>
+            <title>Functional: test cases Verify navigate to Login page</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test was disabled</message>
+                <stack-trace>undefined</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1677155666856' status='undefined' stop='1677155666856'>
+            <name>Functional: test cases Verify menu items name</name>
+            <title>Functional: test cases Verify menu items name</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test was disabled</message>
+                <stack-trace>undefined</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1677155666856' status='undefined' stop='1677155666856'>
+            <name>Functional: test cases Verify the item count</name>
+            <title>Functional: test cases Verify the item count</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test was disabled</message>
+                <stack-trace>undefined</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1677155666856' status='undefined' stop='1677155666856'>
+            <name>Functional: test cases Verify all the name of products</name>
+            <title>Functional: test cases Verify all the name of products</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test was disabled</message>
+                <stack-trace>undefined</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1677155666856' status='undefined' stop='1677155666856'>
+            <name>Functional: test cases Verify all the describtion of products</name>
+            <title>Functional: test cases Verify all the describtion of products</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test was disabled</message>
+                <stack-trace>undefined</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1677155666856' status='undefined' stop='1677155666856'>
+            <name>Functional: test cases Verify all the price of products</name>
+            <title>Functional: test cases Verify all the price of products</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test was disabled</message>
+                <stack-trace>undefined</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1677155666856' status='undefined' stop='1677155666856'>
+            <name>Functional: test cases Verify all the button of products</name>
+            <title>Functional: test cases Verify all the button of products</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test was disabled</message>
+                <stack-trace>undefined</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1677155666856' status='undefined' stop='1677155666856'>
+            <name>Functional: test cases Verify menu items name</name>
+            <title>Functional: test cases Verify menu items name</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test was disabled</message>
+                <stack-trace>undefined</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1677155666856' status='undefined' stop='1677155666856'>
+            <name>Functional: test cases Verify all the names are coming correctly or not</name>
+            <title>Functional: test cases Verify all the names are coming correctly or not</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test was disabled</message>
+                <stack-trace>undefined</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1677155666856' status='undefined' stop='1677155666856'>
+            <name>Functional: test cases Verify that description content is matched or not</name>
+            <title>Functional: test cases Verify that description content is matched or not</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test was disabled</message>
+                <stack-trace>undefined</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1677155666856' status='undefined' stop='1677155666856'>
+            <name>Functional: test cases Verify that after click on cart "Add to cart" button changed to "Remove"</name>
+            <title>Functional: test cases Verify that after click on cart "Add to cart" button changed to "Remove"</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test was disabled</message>
+                <stack-trace>undefined</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1677155666856' status='undefined' stop='1677155666856'>
+            <name>Functional: test cases Verify that after click on cart count is increased or not</name>
+            <title>Functional: test cases Verify that after click on cart count is increased or not</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test was disabled</message>
+                <stack-trace>undefined</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1677155666856' status='undefined' stop='1677155666856'>
+            <name>Functional: test cases filter otion selection</name>
+            <title>Functional: test cases filter otion selection</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test was disabled</message>
+                <stack-trace>undefined</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

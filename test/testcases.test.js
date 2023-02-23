@@ -47,7 +47,7 @@ describe('Functional: test cases', () => {
         await reporter.endStep();
     })
 
-    test.only('Verify login Functionality with Blank Credentials', async () => {
+    test('Verify login Functionality with Blank Credentials', async () => {
         
        await loginpage.visit()
        await loginpage.login("","")
