@@ -1,9 +1,6 @@
 export default class BasePage{
 
-    async loadUrl (page, url) {
-        await page.goto(url, {waitUntil: 'networkidleo'})
-    }
-     
+         
     async click(page, selector){
         try {
                  await page.waitForSelector(selector)

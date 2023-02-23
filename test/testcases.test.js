@@ -96,7 +96,7 @@ describe('Functional: test cases', () => {
 
  
 
-    /*-----------------------HomePage Footer-----------------------------------------*/
+    //----------------------    HomePage Footer
 
 
     test('Verify footer section is displayed', async function(){
@@ -149,7 +149,7 @@ describe('Functional: test cases', () => {
    
 
 
-/*-----------------------HomePage Header-----------------------------------------*/
+//-----------------------      HomePage Header
 
 
     test('Verify header section is displayed', async function(){
@@ -282,12 +282,7 @@ describe('Functional: test cases', () => {
       
     },defaultTimeout)
 
-    // it.only('should match a screenshot', async () => {
-    //     await page.goto('https://www.example.com');
-    //     const screenshot = await page.screenshot();
-    //     expect(screenshot).toMatchImageSnapshot();
-    //   }, 30000);
-  
+ 
 })
 
 
